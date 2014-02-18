@@ -14,6 +14,7 @@ db.client.query('SELECT 1 + 1 AS solution', (err, rows, fields) ->
 )
 
 # db.client.end()
+db.disconnect()
 # console.log db
 
 # db.adapter.query('SHOW TABLES', -> (err, data) 
