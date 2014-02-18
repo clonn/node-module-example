@@ -1,20 +1,22 @@
 Schema = require("jugglingdb").Schema
+
 db = new Schema("mysql",
   database: "myapp_test"
   username: "user"
   password: "user1234"
 )
 
-# db.client.connect()
 db.client.query('SELECT 1 + 1 AS solution', (err, rows, fields) ->
   if err
     throw err
-
   console.log('The solution is: ', rows[0].solution)
+  db.client.end()
 )
 
+
+
 # db.client.end()
-db.disconnect()
+# connection.disconnect()
 # console.log db
 
 # db.adapter.query('SHOW TABLES', -> (err, data) 
