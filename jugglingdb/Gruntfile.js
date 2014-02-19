@@ -14,7 +14,7 @@ module.exports = function(grunt) {
                 'should'
               ]
             },
-            src: ['test/**/*.js']
+            src: ['out/test/**/*.js']
           }
         },
         jshint: {
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
                 src: ['lib/**/*.js']
             },
             test: {
-                src: ['test/**/*.js']
+                src: ['out/test/**/*.js']
             },
         },
         clean: {
