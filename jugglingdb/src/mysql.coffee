@@ -6,12 +6,14 @@ db = new Schema("mysql",
   password: "user1234"
 )
 
-db.client.query('SELECT 1 + 1 AS solution', (err, rows, fields) ->
-  if err
-    throw err
-  console.log('The solution is: ', rows[0].solution)
-  db.client.end()
-)
+module.exports = db
+
+# db.client.query('SELECT 1 + 1 AS solution', (err, rows, fields) ->
+#   if err
+#     throw err
+#   console.log('The solution is: ', rows[0].solution)
+#   db.client.end()
+# )
 
 
 
