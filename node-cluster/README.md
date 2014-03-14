@@ -1,7 +1,7 @@
-example jugglingDB
-===================
+node cluster
+============
 
-first for jugglingDB.
+test for node cluster, can watch cluster process and roll back same server port.
 
 ##Example for connect with different database.
 
@@ -9,4 +9,5 @@ first for jugglingDB.
 
 try command line below,
 
-    npm run
+    npm compile
+    npm start
