@@ -1,7 +1,7 @@
 {
-  "name": "node_uuid",
+  "name": "node_cluster",
   "version": "0.0.1",
-  "description": "use node uuid",
+  "description": "node server cluster monitor",
   "main": "node app.js",
   "directories": {
     "doc": "docs",
