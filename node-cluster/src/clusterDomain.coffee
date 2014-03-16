@@ -48,3 +48,19 @@ else
   server.listen(PORT)
   console.log "start server with #{PORT}"
 
+
+logErrors = (err, req, res, next) ->
+  console.error(err.stack)
+  next(err)
+
+
+clientErrorHandler = (err, req, res, next) ->
+  if req.xhr
+    res.send(500, { error: 'Something blew up!' })
+  else
+    next(err)
+
+errorHandler = (err, req, res, next) ->
+  res.status(500)
+  res.render('error', { error: err })
+
