@@ -12,8 +12,7 @@
     "watch": "grunt watch",
     "start": "node out/test.js"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.4.1",
