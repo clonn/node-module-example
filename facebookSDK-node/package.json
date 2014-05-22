@@ -1,5 +1,5 @@
 {
-  "name": "html2jade_test",
+  "name": "facebook_sdk_node_test",
   "version": "0.0.1",
   "description": "use html2jade test",
   "main": "node test.js",
@@ -13,7 +13,7 @@
     "start": "node out/test.js"
   },
   "dependencies": {
-    "html2jade": "~0.6.2"
+    "fb": "~0.7.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
