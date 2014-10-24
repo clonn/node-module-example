@@ -10,5 +10,5 @@ var tube = pictureTube();
 tube.pipe(process.stdout);
 
 var fs = require('fs');
-fs.createReadStream('dog.png').pipe(tube);
+fs.createReadStream('god.png').pipe(tube);
 
